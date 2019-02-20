@@ -7,7 +7,9 @@
 <script type="text/javascript">
 $(function() {
 	$("#getContacts").click(function() {
-		var param = { key : "[발급받은 API KEY]" };
+		//var param = { key : "[발급받은 API KEY]" };
+		var param = { key : "42b4715a46e7d319f96fe84081d1c771" };
+		
 		$("#list").empty();
 		$.get("http://tfactory.com:8000/APIKeyServer/contacts", param, function(data) {
 			console.log(data);
